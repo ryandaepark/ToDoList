@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import TodoForm from './TodoForm'
 
 const TodoList = () => {
-  const [todos, setTodos] = ueState([]);
+  const [todos, setTodos] = useState([]);
 
   const addTodo = todo => {
-    if (!todo.text || /^\s*/.test(todo.text)) {
+    if (!todo.text || /^\s*$/.test(todo.text)) {
       return;
     }
 
