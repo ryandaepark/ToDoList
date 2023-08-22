@@ -28,7 +28,7 @@ const TodoList = () => {
 
   const completeTodo = id => {
     let updatedTodos = todos.map(todo => {
-      if(todo.id == id) {
+      if(todo.id == id) { //loop through each to do -> if todo.id = id then bool isComplete
         todo.isComplete = !todo.isComplete;
       }
       return todo;
